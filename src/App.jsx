@@ -6,7 +6,9 @@ import {
   Linkedin, Mail, Menu, X, MapPin, Sparkles, ExternalLink, Braces,
   Layers3, Smartphone, Send, GraduationCap, Heart, MoveUpRight
 } from 'lucide-react'
-
+import TriporaImg from './img/Tripora.png'
+import RecipeExplorerImg from './img/RecipeExplorer.png'
+import ProductExplorerImg from './img/ProductExplorer.png'
 
 const skills = [
   { name: 'React', symbol: '⚛', color: 'cyan', level: 'UI development' },
@@ -259,14 +261,14 @@ function Skills() {
 function ProjectVisual({ theme }) {
   if (theme === 'tripora') return (
    <img
-    src='/src/img/Tripora.png'
+    src={TriporaImg}
     alt="Trip Explorer Project"
     className="product-image"
   />
   )
   if (theme === 'recipe') return (
   <img
-    src='/src/img/RecipeExplorer.png'
+    src={RecipeExplorerImg}
     alt="Recipe Explorer Projec"
     className="product-image"
   />
@@ -274,7 +276,7 @@ function ProjectVisual({ theme }) {
   if (theme === 'product') return (
     
   <img
-    src='/src/img/ProductExplorer.png'
+    src={ProductExplorerImg}
     alt="Product Explorer Project"
     className="product-image"
   />
